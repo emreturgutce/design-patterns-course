@@ -58,6 +58,8 @@ class HtmlBuilder {
 }
 
 const builder = new HtmlBuilder('ul');
-builder.addChildFluent('li', 'Hello').addChild('li', 'world');
+builder
+  .addChildFluent('li', 'Hello')
+  .addChildFluent('li', 'world');
 
 console.log(builder.toString());
