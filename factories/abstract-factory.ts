@@ -52,7 +52,7 @@ class HotDrinkMachine {
   }
 
   makeDrink(drinkType: AvailableDrink, amount: number): HotDrink {
-    return this.factories.get(drinkType).prepare(amount);
+    return this.factories.get(drinkType)!.prepare(amount);
   }
 }
 
